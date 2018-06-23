@@ -1,0 +1,87 @@
+body{
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 3%;
+  font-size: 100%;
+}
+
+header{
+  border: 2px solid;
+  height: 70px;
+  padding-left: 0;
+  padding-right: 3%;
+  padding-top: 2%;
+  margin-top: 10px;
+  padding-bottom: 1%;
+  background-color: rgb(75, 0, 130);
+}
+
+nav{
+  border: 7px solid;
+  height: 20%;
+}
+
+#pMarca{
+  float:right;
+  font-family: fantasy;
+  color:#84C3BE;
+}
+.imgLogoLinkedin{
+  float:right;
+  width: 5%;
+  border-radius: 10px;
+  padding-top: 2%;
+}
+#imglogoEmpresa{
+  float:left;
+  width: 7%;
+  margin-left: 5%;
+}
+a:link{
+  color:#000000;
+  text-decoration: none;
+  font-size: 150%;
+  margin: 3%;
+  font-family: fantasy;
+}
+
+section{
+  margin-top: 2%;
+  border: 2px solid;
+  display:flex;
+}
+
+footer{
+  margin-top: 2%;
+  border: 2px solid;
+  background-color: #0000f0;
+  height: auto;
+  text-align: center;
+}
+
+article{
+  border: 2px solid;
+  margin: 2%;
+  width: 33%;
+}
+
+#imgSectionSup{
+  height: auto;
+  padding: 5px;
+
+}
+
+div p{
+  padding: 5px;
+}
+p{
+    font-size: 2.0vw;
+}
+
+.pfooter{
+  font-size: 1.5vw;
+  align-content: center;
+}
+.imgTam{
+  width: 100%;
+}

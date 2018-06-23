@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Ejercicio Javascript</title>
+</head>
+<body>
+<p id="pMensaje">"Perdio Colombia" </p>
+<button type="button" onclick='document.getElementById("pMensaje").innerHTML = "Hola JavaScript!"'>Cambiame!</button>
+<button type="button" onclick='cambiarTexto()'>Cambiame 2!</button>
+<button type="button" onclick='cambiarStyle()'>Cambiame 3!</button>
+<button type="button" onclick='sumarrestar(true)'>Sumar!</button>
+<button type="button" onclick='sumarrestar(true)'>Negacion</button>
+<button type="button" onclick='sumarrestar(true)'>OR</button>
+<button type="button" onclick='sumarrestar(true)'>AND</button>
+<button type="button" onclick='operadoresmatematicos(27,28,18,10,5)'>MATEMATICOS</button>
+<script type="text/javascript">
+
+var resultado = 5;
+resultado++;
+alert(resultado)
+resultado--;
+
+
+numero1= 5;
+numero2= 3;
+alert(numero1 + numero2);
+function cambiartexto (){
+  document.getElementById('pMensaje').innerHTML="2-1"
+}
+</script>
+
+<script type="text/javascript" scr="../JavaScript/session7.js"></script>
+
+
+</body>
+</html>

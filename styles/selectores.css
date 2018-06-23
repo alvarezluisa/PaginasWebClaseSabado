@@ -1,0 +1,56 @@
+/* Selectores SIMPLES */
+/* Todos los elementos p son rojos */
+/*p {
+  color: red;
+}*/
+
+/* Todos los elementos div son azules */
+div {
+  color: blue;
+}
+
+/* Selectores Clases */
+/* El elemento con la clase "first" está en negrita*/
+.first {
+  font-weight: bold;
+}
+.second{
+  font-weight: lighter;
+}
+.third{
+  color: yellow;
+}
+/* Todos los elementos con la clase "done" están tachados*/
+.done {
+  text-decoration: line-through;
+}
+/* Selectores de id*/
+#pPolite {
+  font-family: cursive;
+}
+
+#pRude {
+  font-family: monospace;
+  text-transform: uppercase;
+}
+/*Selector universal*/
+* {
+  padding: 5px;
+  border: 1px solid black;
+  background: rgba(255,0,0,0.25)
+}
+
+/*Selector Combinado*/
+ section p {
+  color: blue;
+}
+section > p {
+  background-color: yellow;
+}
+h2 + p {
+  text-transform: uppercase;
+}
+
+h2 ~ p {
+  border: 1px dashed black;
+}

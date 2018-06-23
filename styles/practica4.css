@@ -1,0 +1,74 @@
+#pNegro{
+  color: black;
+  font-weight: bold;
+  font-size: xx-large;
+}
+#pBlanco{
+  color: white;
+  font-weight: bold;
+  font-size: xx-large;
+}
+#pRojo{
+  color: red;
+  font-weight: bold;
+  font-size: xx-large;
+}
+#pVerde{
+  color: lime;
+  font-weight: bold;
+  font-size: xx-large;
+}
+#pAzul{
+  color: blue;
+  font-weight: bold;
+  font-size: xx-large;
+}
+#pAmarillo{
+  color: yellow;
+  font-weight: bold;
+  font-size: xx-large;
+}
+#pMorado{
+  color: fuchsia;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+#table1{
+  text-align: left;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border:3px solid;
+}
+
+caption span{
+  font-weight: bold;
+}
+
+span{
+  font-weight: bold;
+}
+tr{
+  align:center;
+}
+
+th{
+  vertical-align: top;
+  background-color: rgb(153, 255, 153);
+  font-size: +2
+}
+
+td{
+  vertical-align: top;
+  text-align: center;
+}
+#tdPrimero{
+  vertical-align: middle;
+  text-align: left;
+  background-color: rgb(102, 255, 255);
+  font-size: +2
+}
+#trRed{
+  color:red;
+}
