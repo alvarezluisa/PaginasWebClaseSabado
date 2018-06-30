@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejercicio java script</title>
+</head>
+<body>
+  <p id="pParrafo">sdfg</p>
+  <p id="pIndefinido">indefinido</p>
+  <p id="pNulo">Nulo</p>
+  <div>
+    <h3>Digite numero el otro que desea sumar</h3>
+    <input type="text" name="idTexto" id="txtNum1Suma" value="">
+    <input type="text" name="idTexto" id="txtNum2Suma" value="">
+    <button type="button" onclick="suma_muestra('txtNum1Suma','txtNum2Suma')">Suma</button>
+  </div>
+  <div>
+    <h3>Calculadora</h3>
+    <input type="text" name="idTexto" id="txtNum1" value="">
+    <input type="text" name="idTexto" id="txtNum2" value="">
+    <button type="button" onclick='calculadora.obtenerNumero(0);calculadora.suma()'> +</button>
+    <button type="button" onclick='calculadora.resta()'> -</button>
+    <button type="button" onclick='calculadora.multiplicar()'> *</button>
+    <button type="button" onclick='calculadora.dividir()'> /</button>
+    <input type="text" name="idTexto" id="txtResultado" value="">
+  </div>
+  <button type="button" onclick='cadena()'>Cadena</button>
+  <button type="button" onclick='cambiarParrafos()'>cambiarParrafos</button>
+
+<p name="prueba">PRUEBA</p>
+<p name="especial">PArraf</p>
+<p>HOLAAA</p>
+
+<script>
+var persona = {
+  nombre : "Jose",
+  apellido  : "Ramirez",
+  edad       : 50,
+  colorPreferido  : "azul"
+};
+var numero1;
+var numero2;
+document.getElementById("pParrafo").innerHTML = persona + " tiene " + persona.edad + " años.";
+persona = undefined;
+document.getElementById("pIndefinido").innerHTML = persona + " tiene " + typeof persona;
+persona = null;
+document.getElementById("pNulo").innerHTML = persona + " tiene " + typeof persona;
+
+function suma_muestra(numero1,numero2){
+  var resultado = parseInt(document.getElementById(numero1).value) +parseInt(document.getElementById(numero2).value);;
+  alert(resultado)
+};
+var calculadora ={
+
+  obtenerNumero: function(resultado){
+     numero1 = parseInt(document.getElementById('txtNum1').value);
+     numero2 = parseInt(document.getElementById('txtNum2').value);
+  },
+  suma: function(){
+     document.getElementById('txtResultado').value  = numero1+numero2;
+  },
+  resta:function(){
+      document.getElementById('txtResultado').value  = numero1-numero2;
+  },
+  multiplicar:function(){
+      document.getElementById('txtResultado').value  = numero1*numero2;
+  },
+  dividir:function(){
+      document.getElementById('txtResultado').value  = numero1/numero2;
+  },
+
+};
+
+function cadena(){
+  var cadena ="En un lugar de la Mancha de cuyo nombre no quiero acordarme...";
+  var letras = cadena.split("");
+  var resultado = "";
+
+  for (i in letras){
+    if(letras[i]=="a"){
+      break;
+    }
+    else{
+      resultado+=letras[i];
+    }
+  }
+  alert(resultado);
+};
+
+function cambiarParrafos(){
+  var parrafos =document.getElementsByTagName("p");
+  /*var primerParrafo = parrafos[0];
+  primerParrafo.style.fontSize ="45px";
+
+  var numParrafos = parrafos.length
+  for (var i=0; i<numParrafos;i++){
+    if(i==3){
+      break;
+    }
+    parrafos[i].innerHTML = "Parrafo numero" + i;
+    var parrafo = parrafos[i];
+    parrafo.style.fontSize ="45px";
+  }*/
+
+  for(parrafo in parrafos){
+    if(parrafo==3){
+      break;
+    }
+    parrafos[parrafo].style.fontSize ="45px";
+    parrafos[parrafo].innerHTML = "Parrafo numero" ;
+
+  }
+}
+</script>
+</body>
+</html>
