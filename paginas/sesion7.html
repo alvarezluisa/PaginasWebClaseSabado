@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+</head>
+<body>
+  <p id="idMensaje">prueba</p>
+  <button type="button" onclick='document.getElementById("idMensaje").innerHTML = "Hola JavaScript!"'>Cambiame!</button>
+  <button type="button" onclick='cambiarTexto()'>Cambiame 2!</button>
+  <button type="button" onclick='cambiarStyle()'>Cambiame 3!</button>
+  <button type="button" onclick='sumarRestar(true)'>Suma</button>
+  <button type="button" onclick='sumaYResta()'>Suma y resta</button>
+  <button type="button" onclick='negacion()'>Negacion</button>
+  <button type="button" onclick='operadorAND()'>operadorAND</button>
+  <button type="button" onclick='operadorOR()'>operadorOR</button>
+  <script type="text/javascript" src="../scripts/sesion7.js"></script>
+  <script type="text/javascript">
+    var numero_1 = 5;
+    var numero_2 = 1;
+    var resultado =numero_1 + numero_2;
+    alert("Suma" + resultado);
+
+  </script>
+
+</body>
+</html>
