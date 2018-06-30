@@ -21,9 +21,9 @@
     <input type="text" name="idTexto" id="txtNum1" value="">
     <input type="text" name="idTexto" id="txtNum2" value="">
     <button type="button" onclick='calculadora.obtenerNumero(0);calculadora.suma()'> +</button>
-    <button type="button" onclick='calculadora.resta()'> -</button>
-    <button type="button" onclick='calculadora.multiplicar()'> *</button>
-    <button type="button" onclick='calculadora.dividir()'> /</button>
+    <button type="button" onclick='calculadora.obtenerNumero(0);calculadora.resta()'> -</button>
+    <button type="button" onclick='calculadora.obtenerNumero(0);calculadora.multiplicar()'> *</button>
+    <button type="button" onclick='calculadora.obtenerNumero(0);calculadora.dividir()'> /</button>
     <input type="text" name="idTexto" id="txtResultado" value="">
   </div>
   <button type="button" onclick='cadena()'>Cadena</button>
@@ -32,6 +32,10 @@
 <p name="prueba">PRUEBA</p>
 <p name="especial">PArraf</p>
 <p>HOLAAA</p>
+<p onmouseover="this.innerHTML='Pasó encima'">ghjkl</p>
+<p id="pMiFunction" onmouseout="miFunction()">ghjkl</p>
+<span onmousedown="this.style.color='red'">Pasar el mouse Aqui!</span>
+<button type="button" onclick='fechas()'>Fechas</button>
 
 <script>
 var persona = {
@@ -68,8 +72,16 @@ var calculadora ={
       document.getElementById('txtResultado').value  = numero1*numero2;
   },
   dividir:function(){
-      document.getElementById('txtResultado').value  = numero1/numero2;
-  },
+    var resultado;
+      try {
+        resultado = numero1/numero2;
+      } catch (e) {
+        resultado = "NO SE ADMITE DIVISION POR 0";
+      } finally {
+        document.getElementById('txtResultado').value  = resultado;
+        alert(resultado);
+      }
+    }
 
 };
 
@@ -112,7 +124,24 @@ function cambiarParrafos(){
     parrafos[parrafo].innerHTML = "Parrafo numero" ;
 
   }
+};
+function miFunction() {
+    document.getElementById("pMiFunction").innerHTML = "CLASE JAVASCRIPT";
+};
+function fechas(){
+  var fechaISO = new Date("2018-03-25");
+  alert("FECHA ISO "  + fechaISO);
+  var fechaYYYYMM = new Date("2015-03");
+  alert("FECHA Año mes "  + fechaISO);
+  var fechaISOLarga = new Date("2015-03-25T12:00:00Z");
+  alert("FECHA ISO larga "  + fechaISO);
+  var fechaCorta = new Date("03/25/2015");
+  alert("FECHA corta "  + fechaCorta);
+  var fechaLarga = new Date("25 Mar 2015");
+  alert("FECHA Larga "  + fechaCorta);
 }
+
+
 </script>
 </body>
 </html>
