@@ -133,3 +133,10 @@ function potenciacion(){
   }
   document.getElementById('txtResultado').value = resultado;
 }
+
+function obtenerDias(){
+  var dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+  for(dia in dias) {
+    alert(dias[dia]);
+  }
+}
