@@ -14,9 +14,24 @@
   <button type="button" onclick='cambiarStyle()'>Cambiame 3!</button>
   <button type="button" onclick='sumarRestar(true)'>Suma</button>
   <button type="button" onclick='sumaYResta()'>Suma y resta</button>
-  <button type="button" onclick='negacion()'>Negacion</button>
-  <button type="button" onclick='operadorAND()'>operadorAND</button>
-  <button type="button" onclick='operadorOR()'>operadorOR</button>
+  <button type="button" onclick='operadoresLogicos.negacion()'>Negacion</button>
+  <button type="button" onclick='operadoresLogicos.operadorAND()'>operadorAND</button>
+  <button type="button" onclick='operadoresLogicos.operadorOR()'>operadorOR</button>
+  <button type="button" onclick='operadoresMatematicos(27,28,18,10)'>operadoresMatematicos</button>
+  <button type="button" onclick='relaciones(27,28,"Hola","Holdfghjk")'>relaciones</button>
+  <div>
+    <h1>Digite su EDAD</h1>
+    <input type="text" name="idTexto" id="txtTexto" value="">
+    <button type="button" onclick='mayorEdad()'>  IFCondicion</button>
+  </div>
+  <button type="button" onclick='clasificarEDAD()'>  Mensaje especifico</button>
+  <div>
+    <h3>Digite numero y la potencia que lo deseas elevar</h3>
+    <input type="text" name="idTexto" id="txtBase" value="">
+    <input type="text" name="idTexto" id="txtExponente" value="">
+    <button type="button" onclick='potenciacion()'> Potenciacion</button>
+    <input type="text" name="idTexto" id="txtResultado" value="">
+  </div>
   <script type="text/javascript" src="../scripts/sesion7.js"></script>
   <script type="text/javascript">
     var numero_1 = 5;
@@ -25,6 +40,8 @@
     alert("Suma" + resultado);
 
   </script>
+
+
 
 </body>
 </html>
